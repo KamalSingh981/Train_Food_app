@@ -8,6 +8,6 @@ get order sooner by paying extra charges.
 This app demonstrates multiple fragments in an activity, a shared ViewModel across fragments,
 data binding, LiveData, and the Jetpack Navigation component.
 
-The Link of the app https://drive.google.com/drive/folders/16B8GfU30TEZehBHSdereYWPVePORKniG?usp=share_link
+The Link of the app and demo video https://drive.google.com/drive/folders/16B8GfU30TEZehBHSdereYWPVePORKniG?usp=share_link
 
 
