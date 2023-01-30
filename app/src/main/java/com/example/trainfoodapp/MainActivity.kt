@@ -13,21 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.cupcake
+package com.example.trainfoodapp
 
-import android.content.Context
-import android.content.SharedPreferences
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
-import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.recyclerview.widget.RecyclerView
-import com.example.cupcake.data.TrainsDatasource
-import com.example.cupcake.adapter.TrainItemAdapter
+import com.example.trainfoodapp.R
 
 /**
  * Activity for cupcake order flow.

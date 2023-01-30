@@ -1,24 +1,19 @@
-package com.example.cupcake.adapter
+package com.example.trainfoodapp.adapter
 
 import android.content.Context
-import android.provider.Settings.Global.getString
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
-import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.ViewModel
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.cupcake.R
-import com.example.cupcake.data.model.Orders
-import com.example.cupcake.model.OrderViewModel
+import com.example.trainfoodapp.R
+import com.example.trainfoodapp.data.model.Orders
+import com.example.trainfoodapp.model.OrderViewModel
 
-class OrderItemAdapter(private val context: Context, private val dataset: List<Orders>,private val sharedViewModel: OrderViewModel):
+class OrderItemAdapter(private val context: Context, private val dataset: List<Orders>, private val sharedViewModel: OrderViewModel):
     RecyclerView.Adapter<OrderItemAdapter.ItemViewHolder>() {
 
 
@@ -46,7 +41,7 @@ class OrderItemAdapter(private val context: Context, private val dataset: List<O
 
     }
 
-    override fun onBindViewHolder(holder: OrderItemAdapter.ItemViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
 
 
 

@@ -1,4 +1,4 @@
-package com.example.cupcake.data.model
+package com.example.trainfoodapp.data.model
 
 /**
  * Data class that captures user information for logged in users retrieved from LoginRepository

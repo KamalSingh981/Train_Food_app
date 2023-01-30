@@ -18,16 +18,16 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".SummaryFragment">
+    tools:context="com.example.trainfoodapp.SummaryFragment">
 
     <data>
         <variable
             name="viewModel"
-            type="com.example.cupcake.model.OrderViewModel" />
+            type="com.example.trainfoodapp.model.OrderViewModel" />
 
         <variable
             name="summaryFragment"
-            type="com.example.cupcake.SummaryFragment" />
+            type="com.example.trainfoodapp.SummaryFragment" />
     </data>
 
     <ScrollView

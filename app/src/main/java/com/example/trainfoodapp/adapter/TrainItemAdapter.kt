@@ -1,23 +1,19 @@
-package com.example.cupcake.adapter
+package com.example.trainfoodapp.adapter
 
 import android.content.Context
-import android.provider.Settings.Global.getString
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.cupcake.R
-import com.example.cupcake.TrainListFragment
-import com.example.cupcake.data.model.Trains
-import com.example.cupcake.model.OrderViewModel
+import com.example.trainfoodapp.R
+import com.example.trainfoodapp.data.model.Trains
+import com.example.trainfoodapp.model.OrderViewModel
 
-class TrainItemAdapter(private val context: Context, private val dataset:List<Trains>,private val sharedViewModel: OrderViewModel):
+class TrainItemAdapter(private val context: Context, private val dataset:List<Trains>, private val sharedViewModel: OrderViewModel):
     RecyclerView.Adapter<TrainItemAdapter.ItemViewHolder>() {
 
 

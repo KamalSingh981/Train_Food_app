@@ -1,7 +1,7 @@
-package com.example.cupcake.data
+package com.example.trainfoodapp.data
 
-import com.example.cupcake.R
-import com.example.cupcake.data.model.Orders
+import com.example.trainfoodapp.R
+import com.example.trainfoodapp.data.model.Orders
 
 class OrdersDataSource {
 

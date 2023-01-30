@@ -20,13 +20,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".StartFragment">
+    tools:context="com.example.trainfoodapp.StartFragment">
 
 
     <data>
         <variable
             name="startFragment"
-            type="com.example.cupcake.StartFragment" />
+            type="com.example.trainfoodapp.StartFragment" />
     </data>
 
 

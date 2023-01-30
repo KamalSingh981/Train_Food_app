@@ -1,4 +1,4 @@
-package com.example.cupcake
+package com.example.trainfoodapp
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,9 +9,9 @@ import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.example.cupcake.databinding.FragmentCarriageSeatBinding
-import com.example.cupcake.databinding.FragmentStartBinding
-import com.example.cupcake.model.OrderViewModel
+import com.example.trainfoodapp.R
+import com.example.trainfoodapp.databinding.FragmentCarriageSeatBinding
+import com.example.trainfoodapp.model.OrderViewModel
 
 class CarriageSeatFragment : Fragment() {
     private var binding:FragmentCarriageSeatBinding?= null
@@ -53,8 +53,8 @@ class CarriageSeatFragment : Fragment() {
         val carriages = resources.getStringArray(R.array.carriage_numbers)
         val seats =resources.getStringArray(R.array.seat_numbers)
 
-        val arrayAdapter = ArrayAdapter(requireContext(),R.layout.dropdown_item,carriages)
-        val arrayAdapter2 = ArrayAdapter(requireContext(),R.layout.dropdown_item,seats)
+        val arrayAdapter = ArrayAdapter(requireContext(), R.layout.dropdown_item,carriages)
+        val arrayAdapter2 = ArrayAdapter(requireContext(), R.layout.dropdown_item,seats)
 
         val autocompleteTV = view?.findViewById<AutoCompleteTextView>(R.id.autoCompleteTextView)
         val autocompleteTV2 = view?.findViewById<AutoCompleteTextView>(R.id.autoCompleteTextView2)

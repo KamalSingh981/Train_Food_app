@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.cupcake
+package com.example.trainfoodapp
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -22,18 +22,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
-import com.example.cupcake.databinding.FragmentSummaryBinding
-import com.example.cupcake.model.OrderViewModel
+import com.example.trainfoodapp.databinding.FragmentSummaryBinding
+import com.example.trainfoodapp.model.OrderViewModel
 import android.content.Intent
 import android.net.Uri
 
-import android.telephony.SmsManager
-import androidx.core.content.ContextCompat
-import android.Manifest
-import android.content.pm.PackageManager
-import android.widget.Toast
-import androidx.core.app.ActivityCompat
-import androidx.core.app.ActivityCompat.requestPermissions
+import com.example.trainfoodapp.R
 
 /**
  * [SummaryFragment] contains a summary of the order details with a button to share the order
@@ -104,7 +98,7 @@ class SummaryFragment : Fragment() {
 //        } else {
 //            requestPermissions(context, arrayOf(Manifest.permission.SEND_SMS))
 //        }
-        val uri = Uri.parse("smsto:8306808320")
+        val uri = Uri.parse("smsto:6394770742")
         val intent = Intent(Intent.ACTION_SENDTO, uri)
         intent.putExtra(Intent.EXTRA_TEXT, orderSummary)
         startActivity(intent)

@@ -1,4 +1,4 @@
-package com.example.cupcake
+package com.example.trainfoodapp
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,17 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.cupcake.adapter.TrainItemAdapter
-import com.example.cupcake.data.TrainsDatasource
-import com.example.cupcake.databinding.FragmentTrainListBinding
-import com.example.cupcake.model.OrderViewModel
+import com.example.trainfoodapp.adapter.OrderItemAdapter
+import com.example.trainfoodapp.data.OrdersDataSource
+import com.example.trainfoodapp.databinding.FragmentOrderListBinding
+import com.example.trainfoodapp.model.OrderViewModel
 
+class OrderListFragment: Fragment() {
 
-class TrainListFragment : Fragment() {
-    private var _binding: FragmentTrainListBinding? = null
+    private var _binding: FragmentOrderListBinding? = null
     private lateinit var recyclerView: RecyclerView
     private val sharedViewModel: OrderViewModel by activityViewModels()
     private val binding get() = _binding!!
@@ -28,7 +27,7 @@ class TrainListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding= FragmentTrainListBinding.inflate(inflater,container,false)
+        _binding= FragmentOrderListBinding.inflate(inflater,container,false)
         val view = binding.root
         return view
 
@@ -45,13 +44,21 @@ class TrainListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 //        super.onViewCreated(view, savedInstanceState)
-        val myDataset = TrainsDatasource().loadTrains()
-        recyclerView = binding.trainRecyclerView
+        val myDataset = OrdersDataSource().loadOrders()
+        recyclerView = binding.orderRecyclerView
 
         recyclerView.layoutManager = LinearLayoutManager(context)
-        recyclerView.adapter = TrainItemAdapter(requireContext(),myDataset, sharedViewModel)
+        recyclerView.adapter = OrderItemAdapter(requireContext(),myDataset,sharedViewModel)
+
+        binding?.apply {
+            // Specify the fragment as the lifecycle owner
 
 
+            // Assign the view model to a property in the binding class
+
+            // Assign the fragment
+
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -61,10 +68,4 @@ class TrainListFragment : Fragment() {
         setHasOptionsMenu(true)
 
     }
- fun goToNextScreen() {
-        findNavController().navigate(R.id.action_trainListFragment_to_carriageSeatFragment)
-    }
-
-
-
 }

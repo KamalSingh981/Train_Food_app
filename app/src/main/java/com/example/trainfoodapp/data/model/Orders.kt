@@ -1,4 +1,4 @@
-package com.example.cupcake.data.model
+package com.example.trainfoodapp.data.model
 
 import androidx.annotation.DrawableRes
 

@@ -3,13 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".TrainListFragment">
+    tools:context="com.example.trainfoodapp.TrainListFragment">
 
 
     <data>
         <variable
             name="trainListFragment"
-            type="com.example.cupcake.TrainListFragment" />
+            type="com.example.trainfoodapp.TrainListFragment" />
     </data>
     <com.google.android.material.card.MaterialCardView
 

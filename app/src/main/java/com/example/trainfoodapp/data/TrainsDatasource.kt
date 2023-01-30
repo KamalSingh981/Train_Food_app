@@ -1,6 +1,6 @@
-package com.example.cupcake.data
-import com.example.cupcake.R
-import com.example.cupcake.data.model.Trains
+package com.example.trainfoodapp.data
+import com.example.trainfoodapp.R
+import com.example.trainfoodapp.data.model.Trains
 
 class TrainsDatasource {
     fun loadTrains():List<Trains> {
